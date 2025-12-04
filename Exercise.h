@@ -16,7 +16,7 @@ public:
      * @param size Размер массива
      * @param generator Генератор для заполнения массива
      */
-    Exercise(size_t size, Generator& generator);
+    Exercise(const size_t size, const Generator& generator);
     /**
      * @brief Виртуальный деструктор
      */
@@ -36,4 +36,5 @@ public:
      * @return Строка с описанием операции
      */
     virtual std::string getDescription() const = 0;
+
 };
